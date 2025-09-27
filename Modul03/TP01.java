@@ -24,5 +24,3 @@ PS E:\Pasyaaaaaaa\d3if-49-03-Pasya16\Modul01> javac TP01.java
 E:\Pasyaaaaaaa\d3if-49-03-Pasya16\Modul01> java TP01
 500000 10000 30
 800000*/
-
-//edit

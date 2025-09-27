@@ -29,5 +29,3 @@ E:\Pasyaaaaaaa\d3if-49-03-Pasya16\Modul01> java TP03
 12 3
 3
 0*/
-
-//edit

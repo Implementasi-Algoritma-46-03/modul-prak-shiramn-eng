@@ -25,5 +25,3 @@ PS E:\Pasyaaaaaaa\d3if-49-03-Pasya16\Modul01> javac TP02.java
 E:\Pasyaaaaaaa\d3if-49-03-Pasya16\Modul01> java TP02
 Dira 5 2000
 10000*/
-
-//edit
