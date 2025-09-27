@@ -1,6 +1,33 @@
-public class TP03 {
+import java.util.Scanner;
 
-    public static void main(final String[] args) {
-        // Kerjakan soalnya di sini
+public class TP03 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Input: jumlah permen (N), jumlah teman (T)
+        int jumlahPermen = input.nextInt();
+        int jumlahTeman = input.nextInt();
+
+        // Total orang = Dira + teman-temannya
+        int totalOrang = jumlahTeman + 1;
+
+        // Hitung jatah per orang dan sisa
+        int jatahPerOrang = jumlahPermen / totalOrang;
+        int sisaPermen = jumlahPermen % totalOrang;
+
+        // Output
+        System.out.println(jatahPerOrang);
+        System.out.println(sisaPermen);
+
+        input.close();
     }
 }
+
+/**PS E:\Pasyaaaaaaa\d3if-49-03-Pasya16> cd Modul01
+PS E:\Pasyaaaaaaa\d3if-49-03-Pasya16\Modul01> javac TP03.java
+E:\Pasyaaaaaaa\d3if-49-03-Pasya16\Modul01> java TP03
+12 3
+3
+0*/
+
+//edit
