@@ -35,7 +35,7 @@
       "setup": "javac Modul03/Jurnal02.java",
       "run": "java -cp Modul03 Jurnal02",
       "input": "40 50 45",
-      "output": "45.00",
+      "output": "Nilai rata-rata: 45.00",
       "comparison": "included",
       "timeout": 10,
       "points": 10
@@ -84,7 +84,7 @@
       "setup": "javac Modul03/TP02.java",
       "run": "java -cp Modul03 TP02",
       "input": "Dira 5 2000",
-      "output": "Hi, Dira. Total belanja adalah 10000 rupiah",
+      "output": "Hi, Dira. Total belanja adalah 10000 rupiah.",
       "comparison": "included",
       "timeout": 10,
       "points": 10
