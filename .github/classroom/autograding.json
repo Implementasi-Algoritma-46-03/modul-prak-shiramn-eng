@@ -3,7 +3,7 @@
     {
       "name": "Jurnal01a",
       "setup": "javac Modul03/Jurnal01.java",
-      "run": "java java -cp Modul03 Jurnal01",
+      "run": "java -cp Modul03 Jurnal01",
       "input": "4520",
       "output": "4\n520",
       "comparison": "included",
