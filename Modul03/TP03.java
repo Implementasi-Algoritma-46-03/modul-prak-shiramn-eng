@@ -5,14 +5,15 @@ public class TP03 {
         // TP03
         Scanner tugas3 = new Scanner(System.in);
 
-        int n = tugas3.nextInt();
-        int t = tugas3.nextInt();
+        int jumlahpermen = tugas3.nextInt();
+        int jumlahteman = tugas3.nextInt();
 
-        int total = t + 1;
+        int total = jumlahteman + 1;
 
-        int orang = n / total;
-        int permen = n % orang;
+        int orang = jumlahpermen / total;
+        int permen = jumlahpermen % orang;
 
+        System.out.println(orang);
         System.out.println(permen);
 
         tugas3.close();
