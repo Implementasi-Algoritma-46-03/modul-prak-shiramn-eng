@@ -12,7 +12,7 @@ public class Jurnal02 {
 
       double nilaiRataRata = (nilaiA + nilaiB + nilaiC) / 3.0;
 
-      System.out.printf("NIlai rata-rata: %.2f\n", nilaiRataRata);
+      System.out.printf("Nilai rata-rata: %.2f\n", nilaiRataRata);
         input.close();
     }
 }
