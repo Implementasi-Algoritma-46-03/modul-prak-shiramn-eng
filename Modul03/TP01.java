@@ -2,6 +2,8 @@
 import java.util.Scanner;
 
 //membuat kelas namanya TP01, harus sesuai sama nama file
+import java.util.Scanner;
+
 public class TP01 {
     public static void main(String[] args) {
 
@@ -28,3 +30,19 @@ PS E:\Pasyaaaaaaa\d3if-49-03-Pasya16\Modul01> javac TP01.java
 E:\Pasyaaaaaaa\d3if-49-03-Pasya16\Modul01> java TP01
 500000 10000 30
 800000*/
+    public static void main(final String[] args) {
+        // Kerjakan soalnya di sini
+
+        Scanner tugas1 = new Scanner(System.in);
+
+        int x = tugas1.nextInt();
+        int y = tugas1.nextInt();
+        int n = tugas1.nextInt();
+        
+        int total = x + (y * n);
+
+        System.out.println(total);
+        
+        tugas1.close();
+    }
+}
