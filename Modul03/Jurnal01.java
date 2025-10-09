@@ -14,5 +14,17 @@ public class Jurnal01 {
         System.out.println(sisa);
 
         sc.close();
+    public static void main(final String[] args) {
+       Scanner input = new Scanner(System.in);
+
+       //input
+       int N = input.nextInt();
+       int lembar = N / 1000;
+       int sisaUang = N % 1000;
+
+      System.out.println(lembar);
+        System.out.println(sisaUang);
+input.close();
+
     }
 }
