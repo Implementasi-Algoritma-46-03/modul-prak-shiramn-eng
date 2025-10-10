@@ -92,7 +92,7 @@
     },
 	{
       "name": "Jurnal03d",
-      "setup": "javac Modul05 Jurnal03.java",
+      "setup": "javac Modul05/Jurnal03.java",
       "run": "java -cp Modul05 Jurnal03",
       "input": "2 / 3",
       "output": "0.6666667",
@@ -102,7 +102,7 @@
     },
     {
       "name": "Jurnal03e",
-      "setup": "javac Modul05 Jurnal03.java",
+      "setup": "javac Modul05/Jurnal03.java",
       "run": "java -cp Modul05 Jurnal03",
       "input": "52 / 2",
       "output": "26",
@@ -112,7 +112,7 @@
     },
     {
       "name": "Jurnal03f",
-      "setup": "javac Modul05 Jurnal03.java",
+      "setup": "javac Modul05/Jurnal03.java",
       "run": "java -cp Modul05 Jurnal03",
       "input": "7 * 7",
       "output": "49",
@@ -122,7 +122,7 @@
     },
     {
       "name": "Jurnal03g",
-      "setup": "javac Modul05 Jurnal03.java",
+      "setup": "javac Modul05/Jurnal03.java",
       "run": "java -cp Modul05 Jurnal03",
       "input": "10 + 10",
       "output": "20",
@@ -132,7 +132,7 @@
     },
     {
       "name": "Jurnal03h",
-      "setup": "javac Modul05 Jurnal03.java",
+      "setup": "javac Modul05/Jurnal03.java",
       "run": "java -cp Modul05 Jurnal03",
       "input": "50 - 3",
       "output": "47",
@@ -142,7 +142,7 @@
     },
     {
       "name": "TP01a",
-      "setup": "javac Modul05 TP01.java",
+      "setup": "javac Modul05/TP01.java",
       "run": "java -cp Modul05 TP01",
       "input": "januari",
       "output": "janvier",
@@ -152,7 +152,7 @@
     },
     {
       "name": "TP01c",
-      "setup": "javac Modul05 TP01.java",
+      "setup": "javac Modul05/TP01.java",
       "run": "java -cp Modul05 TP01",
       "input": "oktober",
       "output": "oktobre",
@@ -162,7 +162,7 @@
     },
     {
       "name": "TP01d",
-      "setup": "javac Modul05 TP01.java",
+      "setup": "javac Modul05/TP01.java",
       "run": "java -cp Modul05 TP01",
       "input": "februari",
       "output": "fevrier",
@@ -172,7 +172,7 @@
     },
     {
       "name": "TP01e",
-      "setup": "javac Modul05 TP01.java",
+      "setup": "javac Modul05/TP01.java",
       "run": "java -cp Modul05 TP01",
       "input": "mei",
       "output": "mai",
@@ -182,7 +182,7 @@
     },
     {
       "name": "TP01f",
-      "setup": "javac Modul05 TP01.java",
+      "setup": "javac Modul05/TP01.java",
       "run": "java -cp Modul05 TP01",
       "input": "desember",
       "output": "decembre",
@@ -192,7 +192,7 @@
     },  	  
     {
       "name": "TP02a",
-      "setup": "javac Modul05 TP02.java",
+      "setup": "javac Modul05/TP02.java",
       "run": "java -cp Modul05 TP02",
       "input": "2",
       "output": "dimanche",
@@ -202,7 +202,7 @@
     },
     {
       "name": "TP02b",
-      "setup": "javac Modul05 TP02.java",
+      "setup": "javac Modul05/TP02.java",
       "run": "java -cp Modul05 TP02",
       "input": "17",
       "output": "lundi",
@@ -212,7 +212,7 @@
     },
     {
       "name": "TP02c",
-      "setup": "javac Modul05 TP02.java",
+      "setup": "javac Modul05/TP02.java",
       "run": "java -cp Modul05 TP02",
       "input": "5",
       "output": "mercredi",
@@ -222,7 +222,7 @@
     },
     {
       "name": "TP02d",
-      "setup": "javac Modul05 TP02.java",
+      "setup": "javac Modul05/TP02.java",
       "run": "java -cp Modul05 TP02",
       "input": "1",
       "output": "samedi",
@@ -232,7 +232,7 @@
     },
     {
       "name": "TP03a",
-      "setup": "javac Modul05 TP03.java",
+      "setup": "javac Modul05/TP03.java",
       "run": "java -cp Modul05 TP03",
       "input": "Persegi\n3",
       "output": "9 12",
@@ -242,7 +242,7 @@
     },
     {
       "name": "TP03b",
-      "setup": "javac Modul05 TP03.java",
+      "setup": "javac Modul05/TP03.java",
       "run": "java -cp Modul05 TP03",
       "input": "Persegi Panjang\n2 3",
       "output": "6 10",
@@ -252,7 +252,7 @@
     },
 	{
       "name": "TP03c",
-      "setup": "javac Modul05 TP03.java",
+      "setup": "javac Modul05/TP03.java",
       "run": "java -cp Modul05 TP03",
       "input": "Segitiga\n3 4",
       "output": "6 12",
@@ -262,7 +262,7 @@
     },
     {
       "name": "TP03d",
-      "setup": "javac Modul05 TP03.java",
+      "setup": "javac Modul05/TP03.java",
       "run": "java -cp Modul05 TP03",
       "input": "Lingkaran\n14",
       "output": "153.86 43.96",
@@ -272,7 +272,7 @@
     },
     {
       "name": "TP03e",
-      "setup": "javac Modul05 TP03.java",
+      "setup": "javac Modul05/TP03.java",
       "run": "java -cp Modul05 TP03",
       "input": "Persegi\n5",
       "output": "25 20",
@@ -282,7 +282,7 @@
     },
     {
       "name": "TP03f",
-      "setup": "javac Modul05 TP03.java",
+      "setup": "javac Modul05/TP03.java",
       "run": "java -cp Modul05 TP03",
       "input": "Persegi Panjang\n6 4",
       "output": "24 20",
@@ -292,7 +292,7 @@
     },
     {
       "name": "TP03g",
-      "setup": "javac Modul05 TP03.java",
+      "setup": "javac Modul05/TP03.java",
       "run": "java -cp Modul05 TP03",
       "input": "Segitiga\n8 10",
       "output": "40 31",
@@ -302,7 +302,7 @@
     },
     {
       "name": "TP03h",
-      "setup": "javac Modul05 TP03.java",
+      "setup": "javac Modul05/TP03.java",
       "run": "java -cp Modul05 TP03",
       "input": "Lingkaran\n49",
       "output": "1884.79 153.86",
