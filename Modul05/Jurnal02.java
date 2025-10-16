@@ -34,7 +34,7 @@ public class Jurnal02 {
         System.out.println("Nama Hari Tidak Valid");
         }
 
-        int hasilIndex = (hari + bilangan) % 7;
+        int hasilIndex = (hari - bilangan + 7) % 7;
 
         String hasilHari = "";
 
