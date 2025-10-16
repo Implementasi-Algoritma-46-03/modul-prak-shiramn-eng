@@ -30,9 +30,9 @@ public class TP03 {
                 double miring = Math.sqrt(alas * alas + tinggi * tinggi);
                 luas = 0.5 * alas * tinggi;
                 keliling = alas + tinggi + miring;
-                System.out.printf("%d %d", (int) luas, (int) Math.round(keliling));
+                System.out.printf("%d %d", (int) luas, (int) Math.ceil(keliling));
                 break;
-
+                
             case "Lingkaran":
                 int diameter = input.nextInt();
                 double r = diameter / 2.0;
