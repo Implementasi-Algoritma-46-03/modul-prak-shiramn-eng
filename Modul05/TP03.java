@@ -27,10 +27,10 @@ public class TP03 {
             case "Segitiga":
                 int alas = input.nextInt();
                 int tinggi = input.nextInt();
-                luas = 0.5 * alas * tinggi;
                 double miring = Math.sqrt(alas * alas + tinggi * tinggi);
-                keliling = alas + tinggi + Math.round(miring);
-                System.out.printf("%d %d", (int) luas, (int) keliling);
+                luas = 0.5 * alas * tinggi;
+                keliling = alas + tinggi + miring;
+                System.out.printf("%d %d", (int) luas, (int) Math.round(keliling));
                 break;
 
             case "Lingkaran":
