@@ -2,39 +2,30 @@ import java.util.Scanner;
 
 public class Jurnal02 {
     public static void main(final String[] args) {
-        Scanner input = new Scanner(System.in);
-        String namaHari = input.nextLine().trim().toLowerCase();
-        int bilangan = input.nextInt();
+        Scanner s = new Scanner(System.in);
+        String hariIni = s.nextLine();
+        int hariEsok = s.nextInt();
+        int hariKe = 0;
 
-        int hari = -1;
-        switch (namaHari) {
-            case "senin": hari = 0; break;
-            case "selasa": hari = 1; break;
-            case "rabu": hari = 2; break;
-            case "kamis": hari = 3; break;
-            case "jumat": hari = 4; break;
-            case "jum'at": hari = 4; break;
-            case "sabtu": hari = 5; break;
-            case "minggu": hari = 6; break;
-            default:
-                System.out.println("Nama Hari Tidak Valid");
-                input.close();
-                return;
+        switch (hariIni){
+            case "Senin": hariKe = 0;break;
+            case "Selasa": hariKe = 1;break;
+            case "Rabu": hariKe = 2;break;
+            case "Kmais": hariKe = 3;break;
+            case "Jum'at": hariKe = 4;break;
+            case "Sabtu": hariKe = 5;break;
+            case "Minggu": hariKe = 6;break;
         }
-
-        int step = ((bilangan % 7) + 7) % 7;
-        int hasilIndex = (hari + step) % 7;
-
-        String hasilHari = "";
-        switch (hasilIndex) {
-            case 0: hasilHari = "Senin"; break;
-            case 1: hasilHari = "Selasa"; break;
-            case 2: hasilHari = "Rabu"; break;
-            case 3: hasilHari = "Kamis"; break;
-            case 4: hasilHari = "Jum'at"; break;
-            case 5: hasilHari = "Sabtu"; break;
-            case 6: hasilHari = "Minggu"; break;
+        int totalHari = (hariKe + (hariEsok % 7)) % 7;
+        
+        switch (totalHari){
+            case 0: System.out.println("Senin");break;
+            case 1: System.out.println("Selasa");break;
+            case 2: System.out.println("Rabu");break;
+            case 3: System.out.println("Kamis");break;
+            case 4: System.out.println("Jum'at");break;
+            case 5: System.out.println("Sabtu");break;
+            case 6: System.out.println("Minggu");break;
         }
-
     }
 }
