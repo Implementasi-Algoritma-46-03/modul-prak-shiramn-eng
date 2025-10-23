@@ -1,8 +1,8 @@
 ## Identitas
 
-Nama: 
+Nama: Shifa Nuraiha
 
-NIM : 
+NIM : 607062530007
 
 ## Instruksi
 
