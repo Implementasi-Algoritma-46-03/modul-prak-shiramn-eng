@@ -1,90 +1,76 @@
 import java.util.Scanner;
 
 public class Jurnal02 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-    public static void main(final String[] args) {
-        Scanner s = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[][] board = new int[n][n];
 
-        int N = s.nextInt();
-        int[][] matriks = new int[N][N];
+        boolean adaKosong = false;
 
-        // Input matriks / papan tic-tac-toe
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                matriks[i][j] = s.nextInt();
-            }
-        }
-
-        int hasil = pemenang(matriks);
-
-        if (hasil == 1) {
-            System.out.println("O");
-        } 
-        else if (hasil == 2) {
-            System.out.println("X");
-        } 
-        else {
-            if (seri(matriks)) {
-                System.out.println("-");
-            } else {
-                System.out.println("?");
-            }
-        }
-    }
-
-    // Menentukan pemenang tic-tac-toe
-    private static int pemenang(int[][] matriks) {
-
-        // Cek baris
-        for (int i = 0; i < matriks.length; i++) {
-            if (matriks[i][0] == matriks[i][1] &&
-                matriks[i][1] == matriks[i][2] &&
-                matriks[i][0] != 0) 
-            {
-                return matriks[i][0];
-            }
-        }
-
-        // Cek kolom
-        for (int j = 0; j < matriks.length; j++) {
-            if (matriks[0][j] == matriks[1][j] &&
-                matriks[1][j] == matriks[2][j] &&
-                matriks[0][j] != 0) 
-            {
-                return matriks[0][j];
-            }
-        }
-
-        // Cek diagonal utama
-        if (matriks[0][0] == matriks[1][1] &&
-            matriks[1][1] == matriks[2][2] &&
-            matriks[0][0] != 0) 
-        {
-            return matriks[0][0];
-        }
-
-        // Cek diagonal kedua
-        if (matriks[2][0] == matriks[1][1] &&
-            matriks[1][1] == matriks[0][2] &&
-            matriks[2][0] != 0) 
-        {
-            return matriks[2][0];
-        }
-
-        return 0; // Tidak ada pemenang
-    }
-
-    // Mengecek apakah seri
-    private static boolean seri(int[][] matriks) {
-
-        for (int i = 0; i < matriks.length; i++) {
-            for (int j = 0; j < matriks.length; j++) {
-                if (matriks[i][j] == 0) {
-                    return false; // Masih ada ruang kosong → belum seri
+        // input papan
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                board[i][j] = sc.nextInt();
+                if (board[i][j] == 0) {
+                    adaKosong = true;
                 }
             }
         }
 
-        return true; // Tidak ada 0 → papan penuh → seri
+        // cek baris
+        for (int i = 0; i < n; i++) {
+            boolean sama = true;
+            for (int j = 1; j < n; j++) {
+                if (board[i][j] != board[i][0]) {
+                    sama = false;
+                    break;
+                }
+            }
+
+            if (sama && board[i][0] == 1) { System.out.println("O"); return; }
+            if (sama && board[i][0] == 2) { System.out.println("X"); return; }
+        }
+
+        // cek kolom
+        for (int j = 0; j < n; j++) {
+            boolean sama = true;
+            for (int i = 1; i < n; i++) {
+                if (board[i][j] != board[0][j]) {
+                    sama = false;
+                    break;
+                }
+            }
+
+            if (sama && board[0][j] == 1) { System.out.println("O"); return; }
+            if (sama && board[0][j] == 2) { System.out.println("X"); return; }
+        }
+
+        // cek diagonal utama
+        boolean sama = true;
+        for (int i = 1; i < n; i++) {
+            if (board[i][i] != board[0][0]) {
+                sama = false;
+                break;
+            }
+        }
+        if (sama && board[0][0] == 1) { System.out.println("O"); return; }
+        if (sama && board[0][0] == 2) { System.out.println("X"); return; }
+
+        // cek diagonal anti
+        sama = true;
+        for (int i = 1; i < n; i++) {
+            if (board[i][n - 1 - i] != board[0][n - 1]) {
+                sama = false;
+                break;
+            }
+        }
+        if (sama && board[0][n - 1] == 1) { System.out.println("O"); return; }
+        if (sama && board[0][n - 1] == 2) { System.out.println("X"); return; }
+
+        // jika tidak ada pemenang
+        if (adaKosong) System.out.println("?");
+        else System.out.println("-");
     }
 }
