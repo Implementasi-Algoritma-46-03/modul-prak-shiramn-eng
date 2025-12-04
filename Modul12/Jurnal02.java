@@ -1,76 +1,85 @@
 import java.util.Scanner;
-
 public class Jurnal02 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
-        int[][] board = new int[n][n];
+    public static void main(final String[] args) {
+       Scanner sc = new Scanner(System.in);
+       int N = sc.nextInt();
+       int [][] papan = new int [N][N];
 
-        boolean adaKosong = false;
-
-        // input papan
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                board[i][j] = sc.nextInt();
-                if (board[i][j] == 0) {
-                    adaKosong = true;
+       //loop papan
+       boolean tictactoe = false;
+       for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {   
+            papan[i][j] = sc.nextInt();
+            if (papan[i][j] == 0){
+                tictactoe = true;
                 }
             }
         }
-
-        // cek baris
-        for (int i = 0; i < n; i++) {
-            boolean sama = true;
-            for (int j = 1; j < n; j++) {
-                if (board[i][j] != board[i][0]) {
+        //loop row
+            for (int i = 0; i<N; i++){
+                int baris = papan[i][0];
+                if (baris != 0) {
+                    boolean sama = true;
+                    for (int j = 1; j < N; j++){
+                    if (papan[i][j] != baris){
+                        sama = false;
+                        break;
+                    }
+                }
+                if (sama) {
+                    System.out.println(baris == 1 ?  "O" : "X");
+                    return;
+                }
+            }
+        }
+        //loop column
+            for (int j = 0; j < N; j++) {
+            int kolom = papan[0][j];
+            if (kolom != 0) {
+                boolean sama = true;
+                for (int i = 1; i < N; i++){
+                   if (papan[i][j] != kolom){
+                        sama = false;
+                        break;
+                    } 
+                }
+                if (sama) {
+                    System.out.println (kolom == 1 ? "O" : "X");
+                    return;
+                }
+            }
+        //looping diagonal 1
+        int diag = papan [0][0];
+            if (diag != 0){
+                boolean sama = true;
+                for (int i = 1; i < N; i++){
+                if (papan[i][i] != diag) {
                     sama = false;
                     break;
                 }
             }
-
-            if (sama && board[i][0] == 1) { System.out.println("O"); return; }
-            if (sama && board[i][0] == 2) { System.out.println("X"); return; }
+            if (sama) {
+                System.out.println (diag == 1 ? "O" : "X");
+                return;
+            }
         }
-
-        // cek kolom
-        for (int j = 0; j < n; j++) {
+       //looping diagonal 2
+        diag = papan[0][N - 1];
+        if (diag != 0) {
             boolean sama = true;
-            for (int i = 1; i < n; i++) {
-                if (board[i][j] != board[0][j]) {
+            for (int i = 1; i < N; i++) {
+                if (papan[i][N - 1 - i] != diag){
                     sama = false;
                     break;
                 }
             }
-
-            if (sama && board[0][j] == 1) { System.out.println("O"); return; }
-            if (sama && board[0][j] == 2) { System.out.println("X"); return; }
-        }
-
-        // cek diagonal utama
-        boolean sama = true;
-        for (int i = 1; i < n; i++) {
-            if (board[i][i] != board[0][0]) {
-                sama = false;
-                break;
+            if (sama) {
+               System.out.println (diag == 1 ? "O" : "X");
+                return;
             }
         }
-        if (sama && board[0][0] == 1) { System.out.println("O"); return; }
-        if (sama && board[0][0] == 2) { System.out.println("X"); return; }
-
-        // cek diagonal anti
-        sama = true;
-        for (int i = 1; i < n; i++) {
-            if (board[i][n - 1 - i] != board[0][n - 1]) {
-                sama = false;
-                break;
-            }
-        }
-        if (sama && board[0][n - 1] == 1) { System.out.println("O"); return; }
-        if (sama && board[0][n - 1] == 2) { System.out.println("X"); return; }
-
-        // jika tidak ada pemenang
-        if (adaKosong) System.out.println("?");
-        else System.out.println("-");
     }
+    System.out.println("?");
+}
 }
