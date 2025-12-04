@@ -8,7 +8,7 @@ public class Jurnal02 {
         int N = s.nextInt();
         int[][] matriks = new int[N][N];
 
-        // Input matriks
+        // Input matriks / papan tic-tac-toe
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 matriks[i][j] = s.nextInt();
