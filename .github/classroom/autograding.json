@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "Jurnal01",
-      "setup": "javac Modul12/Jurnal01.java",
-      "run": "java -cp Modul12 Jurnal01",
+      "setup": "javac Modul13/Jurnal01.java",
+      "run": "java -cp Modul13 Jurnal01",
       "input": "7\nMonitor Meja Kursi Keyboard Bantal Printer Koin",
       "output": "Printer Monitor Meja Kursi Koin Keyboard Bantal",
       "comparison": "included",
@@ -12,8 +12,8 @@
     },
     {
       "name": "Jurnal02",
-      "setup": "javac Modul12/Jurnal02.java",
-      "run": "java -cp Modul12 Jurnal02",
+      "setup": "javac Modul13/Jurnal02.java",
+      "run": "java -cp Modul13 Jurnal02",
       "input": "7\nMonitor Meja Kursi Keyboard Bantal Printer Koin",
       "output": "Bantal Keyboard Koin Kursi Meja Monitor Printer",
       "comparison": "included",
@@ -22,8 +22,8 @@
     },
     {
       "name": "Jurnal03a",
-      "setup": "javac Modul12/Jurnal03.java",
-      "run": "java -cp Modul12 Jurnal03",
+      "setup": "javac Modul13/Jurnal03.java",
+      "run": "java -cp Modul13 Jurnal03",
       "input": "7\nMonitor Meja Kursi Keyboard Bantal Printer Koin\nKursi",
       "output": "Ditemukan di indeks ke-3",
       "comparison": "included",
@@ -32,8 +32,8 @@
     },
     {
       "name": "Jurnal03b",
-      "setup": "javac Modul12/Jurnal03.java",
-      "run": "java -cp Modul12 Jurnal03",
+      "setup": "javac Modul13/Jurnal03.java",
+      "run": "java -cp Modul13 Jurnal03",
       "input": "7\nMonitor Meja Kursi Keyboard Bantal Printer Koin\nModul",
       "output": "Data tidak ditemukan",
       "comparison": "included",
@@ -42,8 +42,8 @@
     },
     {
       "name": "TP01",
-      "setup": "javac Modul12/TP01.java",
-      "run": "java -cp Modul12 TP01",
+      "setup": "javac Modul13/TP01.java",
+      "run": "java -cp Modul13 TP01",
       "input": "64.38 57.00 65.72 59.05 58.10 60.05 59.03 58.05 66.00 57.51\n65.38 67.00 65.72 58.05 57.10 64.05 69.03 57.05 63.07 57.51",
       "output": "57.00 57.51 58.05 58.10 59.03 59.05 60.05 64.38 65.72 66.00\n57.05 57.10 57.51 58.05 63.07 64.05 65.38 65.72 67.00 69.03",
       "comparison": "included",
@@ -52,8 +52,8 @@
     },
     {
       "name": "TP02",
-      "setup": "javac Modul12/TP02.java",
-      "run": "java -cp Modul12 TP02",
+      "setup": "javac Modul13/TP02.java",
+      "run": "java -cp Modul13 TP02",
       "input": "64.38 57.00 65.72 59.05 58.10 60.05 59.03 58.05 66.00 57.51\n65.38 67.00 65.72 58.05 57.10 64.05 69.03 57.05 63.07 57.51",
       "output": "66.00 65.72 64.38 60.05 59.05 59.03 58.10 58.05 57.51 57.00\n69.03 67.00 65.72 65.38 64.05 63.07 58.05 57.51 57.10 57.05",
       "comparison": "included",
@@ -62,8 +62,8 @@
     },
     {
       "name": "TP03a",
-      "setup": "javac Modul12/TP03.java",
-      "run": "java -cp Modul12 TP03",
+      "setup": "javac Modul13/TP03.java",
+      "run": "java -cp Modul13 TP03",
       "input": "10\n89 56 77 52 88 90 95 73 80 53\n52",
       "output": "Ditemukan di indeks ke-3",
       "comparison": "included",
@@ -72,8 +72,8 @@
     },
     {
       "name": "TP03b",
-      "setup": "javac Modul12/TP03.java",
-      "run": "java -cp Modul12 TP03",
+      "setup": "javac Modul13/TP03.java",
+      "run": "java -cp Modul13 TP03",
       "input": "10\n89 56 77 52 88 90 95 73 80 53\n70",
       "output": "Tidak ditemukan",
       "comparison": "included",
